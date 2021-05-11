@@ -1,6 +1,6 @@
 # Compilar WRF
 
-Es una guia para compilar WRF ([The Weather Research and Forcasting](https://www.mmm.ucar.edu/weather-research-and-forecasting-model)) usando bash en Ubuntu 20.04. 
+Es una guía para compilar WRF ([The Weather Research and Forcasting](https://www.mmm.ucar.edu/weather-research-and-forecasting-model)) usando bash en Ubuntu 20.04. 
 
 ## 1. Compilador gfortran (gcc)
 
@@ -34,7 +34,7 @@ sudo apt-get install sh
 
 ## 2. Preparar espacio de trabajo
 
-Vamos a hacer la compilación en la raiz de [Ubuntu 20.04](https://ubuntu.com/), aquí crearemos la carpeta WRF, dentro de esta carpeta crearemos dos carpetas más: 1) libs y 2) descargas. dentro de la carpeta libs crearemos tres carpetas más 1) grib2, 2) netcdf y 3) mpich.
+Vamos a hacer la compilación en la raíz de [Ubuntu 20.04](https://ubuntu.com/), aquí crearemos la carpeta WRF, dentro de esta carpeta crearemos dos carpetas más: 1) libs y 2) descargas. dentro de la carpeta libs crearemos tres carpetas más 1) grib2, 2) netcdf y 3) mpich.
 
 Para ello abrimos la consola usando el comando Control + Alt + T y ejecutaremos los siguientes comandos: 
 
@@ -68,7 +68,7 @@ Las librerías se deben descargar y guardar en la carpeta WRF/descargas.
 
 ### 3.1 Dependencias 
 
-Dependiendo del uso que se de a WRF se requiere la instalación de varias librerias, estas pueden ser descargadas de los siguientes hipervinculos:
+Dependiendo del uso que se de a WRF se requiere la instalación de varias librerías, estas pueden ser descargadas de los siguientes hipervínculos:
 
 - [zlib](https://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/tar_files/zlib-1.2.7.tar.gz)
 - [libpng](https://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/tar_files/libpng-1.2.50.tar.gz)
@@ -83,17 +83,17 @@ Dependiendo del uso que se de a WRF se requiere la instalación de varias librer
 
 ## 4. Compilar dependencias 
 
-Tenemos 5 librerias de las cuales depende WRF. Lo primero que debemos hacer es desomprimir las librerias para luego  compilarlas.
+Tenemos 5 librerías de las cuales depende WRF. Lo primero que debemos hacer es descomprimir las librerías para luego compilarlas.
 
 ```console
-#Descomprimir todas las librarias
+#Descomprimir todas las librerías
 for i in *.gz ; do tar xzf $i; done
 ```
 
-Antes de comenzar a compilar las librarias crearemos una variable que almacene la dirección donde ubicaremos las librerias:
+Antes de comenzar a compilar las librerías crearemos una variable que almacene la dirección donde ubicaremos las librerías:
 
 ```console
-#Crear varibale en la sesión
+#Crear variable en la sesión
 export LIBDIR=/home/usuario/WRF/libs
 
 #Verificar creación de variable
@@ -102,7 +102,7 @@ echo $LIBDIR
 
 ### 4.1 Compilar zlib
 
-La primera libreria que necesitamos instalar es zlib, ya que libpng depende de esta. La compilación es sencilla, debemos movernos al directorio del instalador en la carpeta descargas, luego ejecutamos el archivo configure, ejecutar make y finalmente make install.
+La primera librería que necesitamos instalar es zlib, ya que libpng depende de esta. La compilación es sencilla, debemos movernos al directorio del instalador en la carpeta descargas, luego ejecutamos el archivo configure, ejecutar make y finalmente make install.
 
 ```console
 #Cambiar al directorio de la librería
@@ -116,7 +116,7 @@ make install
 
 ### 4.2 Compilar libpng
 
-La segunda libreria que instalaremos es libpng, siguiendo los mismos pasos que ejecutamos para zlib.
+La segunda librería que instalaremos es libpng, siguiendo los mismos pasos que ejecutamos para zlib.
 
 ```console
 #Cambiar al directorio de la librería
@@ -130,7 +130,7 @@ make install
 
 ### 4.3 Compilar jasper
 
-La tercera libreria que instalaremos es jasper, siguiendo los mismos pasos que ejecutamos para zlib y libpng.
+La tercera librería que instalaremos es jasper, siguiendo los mismos pasos que ejecutamos para zlib y libpng.
 
 ```console
 #Cambiar al directorio de la librería
