@@ -188,6 +188,20 @@ make install
 
 ## 5. Compilar WRF y WPS
 
+Ubicaremos los instaladores de WRF-4.1.5 y WPS-4.1 en la carpeta WRF.
+
+```console
+#Cambiar al directorio de la librería
+cd ~/WRF
+
+#mover WRF
+mv ~/WRF/WRF-4.1.5 ~/WRF/
+
+#mover WPS
+mv ~/WRF/WPS-4.1 ~/WRF/
+
+```
+
 ### 5.1 Definir direcciones de cada librería instalada previamente
 
 ```console
