@@ -156,3 +156,33 @@ make
 make install
 ```
 
+### 4.5 Compilar netcdf
+
+La cuarta libreria que instalaremos es netcdf, siguiendo los mismos pasos que ejecutamos para zlib, libpng y jasper.
+
+```console
+#Cambiar al directorio de la librería
+cd ~/WRF/downloads/netcdf-4.1.3/
+
+#Ejecutar archivo configure y definir el directorio donde se instalará (netcdf)
+#también deshabilitamos dap y netcdf-4
+./configure --prefix=$LIBDIR/netcdf --disable-dap --disable-netcdf-4
+make
+make install
+make check
+```
+
+### 4.5 Compilar mpich
+
+La quinta y última libreria que instalaremos es mpich, siguiendo los mismos pasos que ejecutamos para zlib, libpng, jasper y netcdf.
+
+```console
+#Cambiar al directorio de la librería
+cd ~/WRF/downloads/mpich-3.0.4/
+
+#Ejecutar archivo configure y definir el directorio donde se instalará (mpich)
+./configure --prefix=$LIBDIR/mpich
+make
+make install
+```
+
