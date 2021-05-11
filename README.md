@@ -172,7 +172,7 @@ make install
 make check
 ```
 
-### 4.5 Compilar mpich
+### 4.6 Compilar mpich
 
 La quinta y última libreria que instalaremos es mpich, siguiendo los mismos pasos que ejecutamos para zlib, libpng, jasper y netcdf.
 
@@ -185,4 +185,26 @@ cd ~/WRF/downloads/mpich-3.0.4/
 make
 make install
 ```
+
+## 5. Compilar WRF y WPS
+
+### 5.1 Definir direcciones de cada librería instalada previamente
+
+```console
+#netcdf
+export NETCDF=$LIBDIR/netcdf
+export LD_LIBRARY_PATH=$LIBDIR/netcdf/lib:$LD_LIBRARY_PATH
+
+#mpich, poner en el path mpicc
+export PATH=$LIBDIR/mpich/bin:$PATH
+
+#jasper
+export JASPERLIB=$LIBDIR/grib2/lib
+export JASPERINC=4LIBDIR/grib2/include
+
+#libpng
+export LD_LIBRARY_PATH=$LIBDIR/grib2/lib:$LD_LIBRARY_PATH
+
+```
+
 
