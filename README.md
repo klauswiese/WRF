@@ -100,7 +100,7 @@ export LIBDIR=/home/usuario/WRF/libs
 echo $LIBDIR
 ```
 
-### 4.1 Compliar zlib
+### 4.1 Compilar zlib
 
 La primera libreria que necesitamos instalar es zlib, ya que libpng depende de esta. La compilación es sencilla, debemos movernos al directorio del instalador en la carpeta descargas, luego ejecutamos el archivo configure, ejecutar make y finalmente make install.
 
@@ -113,3 +113,46 @@ cd ~/WRF/descargas/zlib-1.2.11
 make
 make install
 ```
+
+### 4.2 Compilar libpng
+
+La segunda libreria que instalaremos es libpng, siguiendo los mismos pasos que ejecutamos para zlib.
+
+```console
+#Cambiar al directorio de la librería
+cd ~/WRF/descargas/libpng-1.6.37
+
+#Ejecutar archivo configure y definir el directorio donde se instalará (grib2)
+./configure --prefix=$LIBDIR/grib2 LDFLAGS="-L$LIBDIR/grib2/lib" CRRFLAGS="-I$LIBDIR/grib2/include"
+make
+make install
+```
+
+### 4.3 Compilar jasper
+
+La tercera libreria que instalaremos es jasper, siguiendo los mismos pasos que ejecutamos para zlib y libpng.
+
+```console
+#Cambiar al directorio de la librería
+cd ~/WRF/downloads/jasper-1.900.1/
+
+#Ejecutar archivo configure y definir el directorio donde se instalará (grib2)
+./configure --prefix=$LIBDIR/grib2
+make
+make install
+```
+
+### 4.4 Compilar jasper
+
+La tercera libreria que instalaremos es jasper, siguiendo los mismos pasos que ejecutamos para zlib y libpng.
+
+```console
+#Cambiar al directorio de la librería
+cd ~/WRF/downloads/jasper-1.900.1/
+
+#Ejecutar archivo configure y definir el directorio donde se instalará (grib2)
+./configure --prefix=$LIBDIR/grib2
+make
+make install
+```
+
