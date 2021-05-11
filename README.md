@@ -204,6 +204,8 @@ mv ~/WRF/WPS-4.1 ~/WRF/
 
 ### 5.1 Definir direcciones de cada librería instalada previamente
 
+En este momento definiremos de manera provisional las direcciones, si funcionan, las definiremos de manera permanente en **.bashrc**.
+
 ```console
 #netcdf
 export NETCDF=$LIBDIR/netcdf
@@ -218,7 +220,29 @@ export JASPERINC=4LIBDIR/grib2/include
 
 #libpng
 export LD_LIBRARY_PATH=$LIBDIR/grib2/lib:$LD_LIBRARY_PATH
-
 ```
 
+### 5.2 Compilar WRF
+
+Aquí tenemos tres archivos shell importantes:
+
+- clean
+- configure
+- compile 
+
+```console
+#Cambiar al directorio de la librería
+cd ~/WRF/WRF-4.1.5
+
+#Ejecutar configure
+./configure
+
+```
+Tras ejecutar este comando se dsplegará la lista de compiladores disponibles y lo alcances de cada uno, en nuestro caso seleccionaremos el número **34** - **dmpar** que nos permitirá usar varios procesadores de nuestro ordenador y luego seleccionaremos la opción básica del **Nesting** digitando **1**.
+
+```console
+#Ejecutar compile
+./compile em_real
+
+```
 
