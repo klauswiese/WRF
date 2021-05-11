@@ -263,7 +263,7 @@ export WRF_DIR=/home/usuario/WRF/WRF-4.1.5
 Tras este paso seleccionares l aopción **dmpar** en mi caso el número **3**.
 
 ```console
-#Ejecutar configure
+#Ejecutar compile
 ./compile
 
 ```
