@@ -80,3 +80,36 @@ Dependiendo del uso que se de a WRF se requiere la instalación de varias librer
 
 - [WRF](https://github.com/wrf-model/WRF/archive/refs/tags/v4.1.5.tar.gz)
 - [WPS](https://github.com/wrf-model/WPS/archive/refs/tags/v4.1.tar.gz)
+
+## 4. Compilar dependencias 
+
+Tenemos 5 librerias de las cuales depende WRF. Lo primero que debemos hacer es desomprimir las librerias para luego  compilarlas.
+
+```console
+#Descomprimir todas las librarias
+for i in *.gz ; do tar xzf $i; done
+```
+
+Antes de comenzar a compilar las librarias crearemos una variable que almacene la dirección donde ubicaremos las librerias:
+
+```console
+#Crear varibale en la sesión
+export LIBDIR=/home/usuario/WRF/libs
+
+#Verificar creación de variable
+echo $LIBDIR
+```
+
+### 4.1 Compliar zlib
+
+La primera libreria que necesitamos instalar es zlib, ya que libpng depende de esta. La compilación es sencilla, debemos movernos al directorio del instalador en la carpeta descargas, luego ejecutamos el archivo configure, ejecutar make y finalmente make install.
+
+```console
+#Cambiar al directorio de la librería
+cd ~/WRF/descargas/zlib-1.2.11
+
+#Ejecutar archivo configure y definir el directorio donde se instalará (grib2)
+./configure --prefix=$LIBDIR/grib2
+make
+make install
+```
