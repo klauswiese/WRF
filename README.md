@@ -238,7 +238,7 @@ cd ~/WRF/WRF-4.1.5
 ./configure
 
 ```
-Tras ejecutar este comando se dsplegará la lista de compiladores disponibles y lo alcances de cada uno, en nuestro caso seleccionaremos el número **34** - **dmpar** que nos permitirá usar varios procesadores de nuestro ordenador y luego seleccionaremos la opción básica del **Nesting** digitando **1**.
+Tras ejecutar este comando se dsplegará la lista de compiladores disponibles y lo alcances de cada uno, en nuestro caso usaremos GNU (gfortran/gcc), que en mi caso esta resumido en 4 opciones 32) serial 33) smpar 34) dmpar y 35) dm + sm.  Seleccionaremos el número **34** - **dmpar** que nos permitirá usar varios procesadores de nuestro ordenador y luego seleccionaremos la opción básica del **Nesting** digitando **1**.
 
 ```console
 #Ejecutar compile
@@ -246,3 +246,24 @@ Tras ejecutar este comando se dsplegará la lista de compiladores disponibles y 
 
 ```
 
+### 5.2 Compilar WPS
+
+```console
+#Cambiar al directorio de la librería
+cd ~/WRF/WPS-4.1
+
+#Definir la ubicación de WRF
+export WRF_DIR=/home/usuario/WRF/WRF-4.1.5
+
+#Ejecutar configure
+./configure
+
+```
+
+Tras este paso seleccionares l aopción **dmpar** en mi caso el número **3**.
+
+```console
+#Ejecutar configure
+./compile
+
+```
