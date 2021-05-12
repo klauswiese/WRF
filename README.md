@@ -265,5 +265,30 @@ Tras este paso seleccionares l aopción **dmpar** en mi caso el número **3**.
 ```console
 #Ejecutar compile
 ./compile
-
 ```
+
+## 6. Probar instalación de WRF y WPS
+
+### 6.1 WRF
+Usaremos si logramos instalar WRF probando el archivo **wrf.exe**.
+```console
+#Cambiar al diectorio de wrt.exe
+cd ~/WRF/WRF-4.1.5/main
+
+#Ejecutar archivo
+./wrt.exe
+```
+Como resultado tendremos: * starting wrf task            0  of            1*, esto porque aún no configuramos datos ni tareas que ejecutar
+
+### 6.2 WPS
+
+```console
+#Cambiar al diectorio de wrt.exe
+cd ~/WRF/WPS-4.1/
+
+#Ejecutar archivos geogrid.exe, metgrid.exe y ungrib.exe
+./geogrid.exe
+./metgrid.exe 
+./ungrib.exe
+```
+
