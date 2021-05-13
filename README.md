@@ -275,9 +275,8 @@ Como resultado tendremos: * starting wrf task            0  of            1*, es
 #Cambiar al diectorio de wrt.exe
 cd ~/WRF/WPS-4.1
 
-#Ejecutar archivos geogrid.exe, metgrid.exe y ungrib.exe
+#Ejecutar archivos geogrid.exe y metgrid.exe
 ./geogrid.exe
 ./metgrid.exe 
-./ungrib.exe
 ```
 
