@@ -109,7 +109,7 @@ La primera librería que necesitamos instalar es zlib, ya que libpng depende de 
 
 ```console
 #Cambiar al directorio de la librería
-cd ~/WRF/descargas/zlib-1.2.11
+cd ~/WRF/descargas/zlib-1.2.7
 
 #Ejecutar archivo configure y definir el directorio donde se instalará (grib2)
 ./configure --prefix=$LIBDIR/grib2
