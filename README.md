@@ -86,6 +86,9 @@ Dependiendo del uso que se de a WRF se requiere la instalación de varias librer
 Tenemos 5 librerías de las cuales depende WRF. Lo primero que debemos hacer es descomprimir las librerías para luego compilarlas.
 
 ```console
+#Cambiar al directorio descargas
+cd ~/WRF/descargas
+
 #Descomprimir todas las librerías
 for i in *.gz ; do tar xzf $i; done
 ```
