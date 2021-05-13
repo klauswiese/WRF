@@ -40,7 +40,7 @@ Para ello abrimos la consola usando el comando Control + Alt + T y ejecutaremos 
 
 ```console
 #Cambiar directorio a la raiz (por si estabas en otro sitio), aunque la instalación puede 
-#ser en cualquier directorio
+#ser en cualquier directorio (teniendo el cuidado de redireccionar todo)
 
 cd
 
@@ -97,7 +97,7 @@ Antes de comenzar a compilar las librerías crearemos una variable que almacene 
 
 ```console
 #Crear variable en la sesión
-export LIBDIR=/home/usuario/WRF/libs
+export LIBDIR=~/WRF/libs
 
 #Verificar creación de variable
 echo $LIBDIR
@@ -198,14 +198,14 @@ En este momento definiremos de manera provisional las direcciones, si funcionan,
 ```console
 #netcdf
 export NETCDF=$LIBDIR/netcdf
-export LD_LIBRARY_PATH=$LIBDIR/netcdf/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$LIBDIR/netcdf/lib
 
 #mpich, poner en el path mpicc
 export PATH=$LIBDIR/mpich/bin:$PATH
 
 #jasper
 export JASPERLIB=$LIBDIR/grib2/lib
-export JASPERINC=4LIBDIR/grib2/include
+export JASPERINC=$LIBDIR/grib2/include
 
 #libpng
 export LD_LIBRARY_PATH=$LIBDIR/grib2/lib:$LD_LIBRARY_PATH
@@ -242,7 +242,7 @@ Tras ejecutar este comando se dsplegará la lista de compiladores disponibles y 
 cd ~/WRF/WPS-4.1
 
 #Definir la ubicación de WRF
-export WRF_DIR=/home/usuario/WRF/WRF-4.1.5
+export WRF_DIR=~/WRF/WRF-4.1.5
 
 #Ejecutar configure
 ./configure
@@ -275,8 +275,9 @@ Como resultado tendremos: * starting wrf task            0  of            1*, es
 #Cambiar al diectorio de wrt.exe
 cd ~/WRF/WPS-4.1
 
-#Ejecutar archivos geogrid.exe y metgrid.exe
+#Ejecutar archivos geogrid.exe, metgrid.exe y ungrib.exe
 ./geogrid.exe
-./metgrid.exe 
+./metgrid.exe
+./ungrib.exe 
 ```
 
