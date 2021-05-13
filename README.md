@@ -123,7 +123,7 @@ La segunda librería que instalaremos es libpng, siguiendo los mismos pasos que 
 
 ```console
 #Cambiar al directorio de la librería
-cd ~/WRF/descargas/libpng-1.6.37
+cd ~/WRF/descargas/libpng-1.2.50
 
 #Ejecutar archivo configure y definir el directorio donde se instalará (grib2)
 ./configure --prefix=$LIBDIR/grib2 LDFLAGS="-L$LIBDIR/grib2/lib" CRRFLAGS="-I$LIBDIR/grib2/include"
@@ -137,7 +137,7 @@ La tercera librería que instalaremos es jasper, siguiendo los mismos pasos que 
 
 ```console
 #Cambiar al directorio de la librería
-cd ~/WRF/downloads/jasper-1.900.1/
+cd ~/WRF/descargas/jasper-1.900.1
 
 #Ejecutar archivo configure y definir el directorio donde se instalará (grib2)
 ./configure --prefix=$LIBDIR/grib2
@@ -145,27 +145,13 @@ make
 make install
 ```
 
-### 4.4 Compilar jasper
-
-La tercera libreria que instalaremos es jasper, siguiendo los mismos pasos que ejecutamos para zlib y libpng.
-
-```console
-#Cambiar al directorio de la librería
-cd ~/WRF/downloads/jasper-1.900.1/
-
-#Ejecutar archivo configure y definir el directorio donde se instalará (grib2)
-./configure --prefix=$LIBDIR/grib2
-make
-make install
-```
-
-### 4.5 Compilar netcdf
+### 4.4 Compilar netcdf
 
 La cuarta libreria que instalaremos es netcdf, siguiendo los mismos pasos que ejecutamos para zlib, libpng y jasper.
 
 ```console
 #Cambiar al directorio de la librería
-cd ~/WRF/downloads/netcdf-4.1.3/
+cd ~/WRF/descargas/netcdf-4.1.3
 
 #Ejecutar archivo configure y definir el directorio donde se instalará (netcdf)
 #también deshabilitamos dap y netcdf-4
@@ -175,13 +161,13 @@ make install
 make check
 ```
 
-### 4.6 Compilar mpich
+### 4.5 Compilar mpich
 
 La quinta y última libreria que instalaremos es mpich, siguiendo los mismos pasos que ejecutamos para zlib, libpng, jasper y netcdf.
 
 ```console
 #Cambiar al directorio de la librería
-cd ~/WRF/downloads/mpich-3.0.4/
+cd ~/WRF/descargas/mpich-3.0.4
 
 #Ejecutar archivo configure y definir el directorio donde se instalará (mpich)
 ./configure --prefix=$LIBDIR/mpich
@@ -198,10 +184,10 @@ Ubicaremos los instaladores de WRF-4.1.5 y WPS-4.1 en la carpeta WRF.
 cd ~/WRF
 
 #mover WRF
-mv ~/WRF/WRF-4.1.5 ~/WRF/
+mv ~/WRF/descargas/WRF-4.1.5 ~/WRF/
 
 #mover WPS
-mv ~/WRF/WPS-4.1 ~/WRF/
+mv ~/WRF/descargas/WPS-4.1 ~/WRF/
 
 ```
 
