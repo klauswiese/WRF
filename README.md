@@ -265,7 +265,7 @@ Usaremos si logramos instalar WRF probando el archivo **wrf.exe**.
 cd ~/WRF/WRF-4.1.5/main
 
 #Ejecutar archivo
-./wrt.exe
+./wrf.exe
 ```
 Como resultado tendremos: * starting wrf task            0  of            1*, esto porque aún no configuramos datos ni tareas que ejecutar
 
@@ -273,7 +273,7 @@ Como resultado tendremos: * starting wrf task            0  of            1*, es
 
 ```console
 #Cambiar al diectorio de wrt.exe
-cd ~/WRF/WPS-4.1/
+cd ~/WRF/WPS-4.1
 
 #Ejecutar archivos geogrid.exe, metgrid.exe y ungrib.exe
 ./geogrid.exe
