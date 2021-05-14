@@ -249,7 +249,7 @@ export WRF_DIR=~/WRF/WRF-4.1.5
 
 ```
 
-Tras este paso seleccionares l aopción **dmpar** en mi caso el número **3**.
+Tras este paso seleccionares la opción **dmpar** en mi caso el número **3**.
 
 ```console
 #Ejecutar compile
@@ -259,7 +259,7 @@ Tras este paso seleccionares l aopción **dmpar** en mi caso el número **3**.
 ## 6. Probar instalación de WRF y WPS
 
 ### 6.1 WRF
-Usaremos si logramos instalar WRF probando el archivo **wrf.exe**.
+Veremos si logramos instalar WRF probando el archivo **wrf.exe**.
 ```console
 #Cambiar al diectorio de wrt.exe
 cd ~/WRF/WRF-4.1.5/main
