@@ -267,7 +267,7 @@ cd ~/WRF/WRF-4.1.5/main
 #Ejecutar archivo
 ./wrf.exe
 ```
-Como resultado tendremos: * starting wrf task            0  of            1*, esto porque aún no configuramos datos ni tareas que ejecutar
+Como resultado tendremos: ** starting wrf task            0  of            1**, esto porque aún no configuramos datos ni tareas que ejecutar
 
 ### 6.2 WPS
 
