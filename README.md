@@ -1,6 +1,6 @@
 # Compilar WRF
 
-Es una guía para compilar WRF ([The Weather Research and Forecasting](https://www.mmm.ucar.edu/weather-research-and-forecasting-model)) usando bash en Ubuntu 20.04. 
+Es una guía para compilar WRF ([The Weather Research and Forecasting](https://www.mmm.ucar.edu/weather-research-and-forecasting-model)) usando bash en Ubuntu 20.04. Todo el precedimiento aquí descrito se basa en los videos de [MeteoAdriatic](https://www.youtube.com/channel/UCqlGJ4CY6c863uVJ0URweKg).
 
 ## 1. Compilador gfortran (gcc)
 
