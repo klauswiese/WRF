@@ -22,7 +22,7 @@ sudo apt-get install gfortran
 
 Adicionalmente se debe contar con [csh](https://www.mkssoftware.com/docs/man1/csh.1.asp), [perl](https://www.perl.org/) y [sh](https://en.wikipedia.org/wiki/Bourne_shell#:~:text=The%20Bourne%20shell%20(%20sh%20)%20is,interpreter%20for%20computer%20operating%20systems.&text=Unix%2Dlike%20systems%20continue%20to,are%20used%20by%20most%20users.)
 
-```console
+```{console}
 which perl
 which csh
 which sh
