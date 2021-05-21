@@ -1,6 +1,6 @@
 # Compilar WRF
 
-Es una guía para compilar WRF ([The Weather Research and Forecasting](https://www.mmm.ucar.edu/weather-research-and-forecasting-model)) usando bash en Ubuntu 20.04. Todo el procedimiento aquí descrito se basa en los videos de [MeteoAdriatic](https://www.youtube.com/channel/UCqlGJ4CY6c863uVJ0URweKg). A continuacón se detalla los videos usados:
+Es una guía para compilar WRF ([The Weather Research and Forecasting](https://www.mmm.ucar.edu/weather-research-and-forecasting-model)) usando bash en Ubuntu 20.04. Todo el procedimiento aquí descrito se basa en los videos de [MeteoAdriatic](https://www.youtube.com/channel/UCqlGJ4CY6c863uVJ0URweKg). A continuación se detalla los videos usados:
 
 - [03. Downloading dependencies and WRF](https://www.youtube.com/watch?v=mNsJM-X4ZYE)
 - [04. Compiling libraries required for WRF/WPS](https://www.youtube.com/watch?v=_ygvHhX772w)
