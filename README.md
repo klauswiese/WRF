@@ -10,7 +10,7 @@ Es una guía para compilar WRF ([The Weather Research and Forecasting](https://w
 
 Como compilador usaremos gfortran ([gcc](https://gcc.gnu.org/wiki/GFortran#:~:text=Gfortran%20is%20the%20name%20of,GCC%2C%20the%20GNU%20Compiler%20Collection.)).
 
-```{bash}
+```bash
 #Confirmar si gfrotran esta instalado
 gfortran -v
 ```
