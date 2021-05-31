@@ -294,5 +294,6 @@ cd
 #Abrir archov .bashrc
 nano .bashrc
 ```
+En el archivo abierto se deben adicionar, al final de sus lineas, los comandos para definir los directorios.
 
 
