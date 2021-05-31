@@ -285,3 +285,4 @@ cd ~/WRF/WPS-4.1
 ./ungrib.exe 
 ```
 
+## 7. Agregar de manera permanente los directorios de las librerias instaladas
