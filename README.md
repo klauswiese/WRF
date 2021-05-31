@@ -286,3 +286,13 @@ cd ~/WRF/WPS-4.1
 ```
 
 ## 7. Agregar de manera permanente los directorios de las librerias instaladas
+
+```console
+#Cambiar directorio a la raiz
+cd
+
+#Abrir archov .bashrc
+nano .bashrc
+```
+
+
