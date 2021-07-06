@@ -291,7 +291,7 @@ cd ~/WRF/WPS-4.1
 #Cambiar directorio a la raiz
 cd
 
-#Abrir archov .bashrc
+#Abrir archivo .bashrc
 nano .bashrc
 ```
 En el archivo abierto se deben adicionar, al final de sus lineas, los comandos para definir los directorios.
